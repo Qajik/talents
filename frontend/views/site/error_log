@@ -1,0 +1,4 @@
+[15-Aug-2019 21:34:50 Europe/London] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/talentsa/public_html/frontend/views/site/about.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/talentsa/public_html/frontend/views/site/about.php on line 7
