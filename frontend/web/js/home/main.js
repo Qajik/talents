@@ -165,7 +165,7 @@ jQuery(document).ready(function($) {
 		    loop: true,
 				stagePadding: 0,
 		    margin: 0,
-		    autoplay: true,
+		    autoplay: false,
 		    dots: false,
 		    nav: false,
 				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
@@ -196,6 +196,20 @@ jQuery(document).ready(function($) {
 			$('.customPrevBtn').click(function() {
 			  $('.nonloop-block-14').trigger('prev.owl.carousel');
 			})
+		}
+
+
+		if ( $('.nonloop-block-15').length > 0 ) {
+			$('.nonloop-block-15').owlCarousel({
+			    center: false,
+			    items: 1,
+			    loop: true,
+				stagePadding: 0,
+			    margin: 0,
+			    autoplay: false,
+			    dots: true,
+			    nav: false
+			});
 		}
 
 
