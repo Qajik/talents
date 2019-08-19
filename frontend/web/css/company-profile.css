@@ -1,0 +1,229 @@
+
+html, body {
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.np {
+    padding: 0;
+    margin: 0;
+}
+
+.empty {
+    text-align: center;
+}
+
+.main-top-logo {
+    height: 70px;
+    margin-left: 100px;
+    width: 160px;
+}
+
+.header-layer {
+    background-color: #f8f8f8;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    z-index: 100;
+}
+
+.profile-top-help {
+    font-size: 16px;
+    color: rgba(35, 31, 32, 255);
+    text-decoration: none;
+    margin-top: 25px;
+    float: left;
+    margin-left: 23px;
+}
+
+.profile-top-help:hover {
+    text-decoration: none;
+    color: rgba(35, 31, 32, 0.72);
+}
+
+.profile-settings-button {
+    border: none;
+    background: none;
+    margin-top: 19px;
+}
+
+.profile-settings {
+    display: inline-block;
+    width: 52px;
+    height: 32px;
+    background: url(../img/Settings_icon@3x.png);
+    background-size: 52px 32px;
+}
+
+.profile-top-right-options {
+    /* display: inline; */
+    float: left;
+    height: 70px;
+}
+
+.leftSidbar {
+    height: 239px;
+    background-color: #f2f2f2;
+    border: solid 1px #d7d8d9;
+    box-shadow: 3px 5px 10px 4px #d7d8d9;
+    position: fixed;
+    width: 184px;
+}
+
+.profileHeadBlock {
+    height: 450px;
+    /* border:solid 1px #d7d8d9; */
+    background-color: #f2f2f2;
+    border: solid 1px #d7d8d9;
+    box-shadow: 3px 5px 10px 4px #d7d8d9;
+}
+
+.sectionMainBar {
+    padding-top: 10px;
+}
+
+.profilInfoImage {
+    width: 67px;
+    height: 74px;
+    margin-top: 20px;
+    margin-left: 15px;
+    border: solid 1px #2d7ca8;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.profilInfoImage img {
+    /* width: 67px;*/
+    height: 65px;
+}
+
+.profilInfoName span {
+    font-size: 16px;
+    color: rgba(0, 110, 144, 255);
+    width: 100%;
+    float: left;
+}
+
+.profilInfoName {
+    margin-top: 30px;
+}
+
+.leftBarProfileNavi a {
+    font-size: 20px;
+    color: rgba(131, 128, 128, 255);
+    margin-left: 15px;
+}
+
+.profileTimelineBackground {
+    background: #257090;
+    width: 100%;
+    height: 300px;
+}
+
+.topProfileInfoMain {
+
+    width: 100%;
+    height: 324px;
+    margin-top: -176px;
+}
+
+.profileImage {
+    width: 230px;
+    height: 250px;
+    margin-left: 30px;
+    background: #fff;
+    border: solid 1px #257090;
+    border-radius: 6px;
+    float: left;
+}
+
+.userNameTextSpan {
+    /* float: left; */
+    margin: 110px 0px 0px 30px;
+    font-family: TitilliumWeb-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 255);
+    font-weight: bold;
+}
+
+.userMainInfoTextSpan {
+    /* width: calc(100% - 350px); */
+    display: block;
+}
+
+.userInfoTexts {
+    float: left;
+    width: calc(100% - 350px);
+}
+
+.userProfileAditionalInfo {
+    font-size: 18px;
+    color: rgba(30, 30, 30, 255);
+    margin-top: 20px;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.settingsToolButtonProfileRight {
+    margin-top: 188px;
+    /* padding-bottom: 24px; */
+    width: 47px;
+    height: 47px;
+    background: none;
+    color: #000;
+    border-color: #dcdcdc;
+}
+
+.settingsToolButtonProfileRight:hover {
+    background-color: #257090;
+}
+
+.tabMenuBlock > ul {
+    width: 100%;
+    background: #cdcdcd;
+    height: 70px;
+    /* padding-left: 20px; */
+}
+
+.tabMenuBlock {
+    margin-top: 20px;
+    border-left: solid 2px #d6d6d6;
+    border-right: solid 2px #d6d6d6;
+    margin-bottom: 90px;
+}
+
+.tabMenuBlock > ul > li > a {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 255);
+    height: 70px;
+    border-radius: unset !important;
+    font-weight: bold;
+    padding: 22px 5px;
+    margin: 0 25px;
+}
+
+.tabMenuBlock > ul > li.active > a {
+    font-size: 16px;
+    color: rgba(0, 110, 144, 255) !important;
+    background-color: unset !important;
+    border-bottom: solid 6px #257090 !important;
+}
+
+#company-details{
+    width: calc(100% - 40px);
+    margin: 20px auto 20px auto;
+    background: #fff;
+    border-top: solid 6px #257090;
+    border-bottom: solid 2px #cfcfcf;
+    border-left: solid 2px #cfcfcf;
+    border-right: solid 2px #cfcfcf;
+    box-shadow: 3px 5px 10px 4px #d7d8d9;
+}
+#company-details form{
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 20px 0 80px 0;
+}
+@media (min-width: 768px){
+
+}
