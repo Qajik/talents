@@ -20,8 +20,11 @@ class CompanyProfileAsset extends AssetBundle{
     public $css = [
         'css/company-profile.css',
         'css/site.css',
+        'http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'
     ];
     public $js = [
+        'js/company-profile.js',
+        'http://code.jquery.com/ui/1.11.0/jquery-ui.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
