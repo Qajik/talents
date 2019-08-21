@@ -749,12 +749,36 @@ h1, h2, h3, h4, h5,
   background: transparent;
   border-color: #fff;
 }
-.registerForm{
-  margin-top: -10px;
+#registerForm{
+  background-color: #fff;
+  position: relative;
 }
-.registerForm input{
+#registerForm form{
+  padding: 0 20px;
+}
+#registerForm buttom.btn {
   width: 100%;
+}
+#registerForm .form-group{
+  margin-bottom: 0;
+}
+#registerForm .form-group input, #registerForm .form-group button, #registerForm .form-group select{
+  border: none !important;
   border-radius: 0 !important;
+  font-size: 1.2rem;
+}
+#registerForm .form-group button{
+  position: absolute;
+  height: 50px;
+  bottom: -50px;
+  width: 100%;
+  left: 0;
+  text-transform: none;
+  color: #fff;
+  background-color: #3A4FA0;
+}
+#registerForm .form-group .help-block:empty{
+  display: none;
 }
 .site-section {
   padding: 4em 0;
@@ -1303,15 +1327,15 @@ h1, h2, h3, h4, h5,
   .whyus-short-hr{
     text-align: center;
   }
-  #why-us-section h2, #customers-review h2{
+  .why-us-section h2, #customers-review h2{
     text-transform: uppercase;
     font-weight: normal;
     font-size: 4rem;
   }
-  #why-us-section p{
+  .why-us-section p{
     font-size: 1.5rem;
   }
-  #why-us-section .why-us-section-ideas{
+  .why-us-section .why-us-section-ideas{
     margin-top: 5rem !important; 
   }
   #contact-section form input[type="submit"]{

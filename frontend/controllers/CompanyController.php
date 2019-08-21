@@ -11,8 +11,10 @@ namespace frontend\controllers;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use Yii;
+use frontend\models\SignupForm;
 use frontend\components\CommandDefinitionsComponent;
 use app\components\BaseController;
+use app\models\Company;
 /**
  * Description of DashboardController
  *
@@ -38,7 +40,7 @@ class CompanyController extends BaseController {
                         'actions' => ['logout','index'],
                         'allow' => true,
                         'matchCallback' => function($rule, $action){
-                            return Yii::$app->user->getIdentity()->Role===CommandDefinitionsComponent::talentRole;
+                            return Yii::$app->user->getIdentity()->Role===CommandDefinitionsComponent::companyRole;
                         },
                     ],
                 ],
@@ -64,10 +66,21 @@ class CompanyController extends BaseController {
             ],
         ];
     }
+
+    public function getUserCompany($userID){
+        $company = new Company();
+        return $company->find()->where(['=', 'idUsers', $userID])->all();
+    }
     
     public function actionIndex()
-    {    
-        return $this->render('index');
+    {
+        $model = new SignupForm();
+        if ($model->load(Yii::$app->request->post()) && $model->signup()) {
+            Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
+        }
+        $userID = Yii::$app->user->identity->IdUsers;
+        $company = $this->getUserCompany($userID);
+        return $this->render('index', compact('model', 'company'));
     }
     
 }

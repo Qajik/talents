@@ -133,8 +133,10 @@ CompanyProfileAsset::register($this);
                                         </div>
 
                                         <div class="col-md-12">
-                                            <label>About the company</label>
-                                            <textarea name="companyData[about]" class="form-control" cols="30" rows="10" placeholder="Write about your company ..."></textarea>
+                                            <div class="form-group">
+                                                <label>About the company</label>
+                                                <textarea name="companyData[about]" class="form-control" cols="30" rows="10" placeholder="Write about your company ..."></textarea>
+                                            </div>
                                         </div>
 
 
@@ -237,6 +239,12 @@ CompanyProfileAsset::register($this);
                                                 <input type="text" class="form-control" name="companyData[contatc_person_mobile]" aria-required="true">
                                             </div>
                                         </div>
+
+                                        <div id="contact-update-section">
+                                            <input type="reset" value="Cancel"/>
+                                            <input type="submit" value="Update"/>
+                                        </div>
+
                                     </form>
                                 </div>
 

@@ -210,6 +210,7 @@ html, body {
 }
 
 #company-details{
+    position: relative;
     width: calc(100% - 40px);
     margin: 20px auto 20px auto;
     background: #fff;
@@ -235,4 +236,32 @@ html, body {
 }
 .ui-datepicker-next,.ui-datepicker-prev {
   display:none;
+}
+#contact-update-section{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: right;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    padding: 5px 10px 5px 0;
+    background-color: #ADCAD6;
+}
+#company-details form >div:not(#contact-update-section) .form-group > *:not(label){
+    background-color: #f0f0f0;
+}
+#company-details form #contact-update-section input{
+    width: 100px;
+    border: none;
+}
+#company-details form #contact-update-section input[type="submit"]{
+    color: #fff;
+    background-color: #257090;
+}
+#company-details form #contact-update-section input[type="recet"]{
+    color: #257090;
+    background-color: transparent;
 }

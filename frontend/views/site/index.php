@@ -41,22 +41,41 @@ $this->title = 'TALENTS';
                 </div>
                 <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
                   <h3 class="h4 text-black mb-4 register-now">Register <span>now</span></h3>  
-                  <form action="" method="post" id="registerForm" class="form-box">
                     
-                    <div class="form-group mb-4">
-                      <input type="text" class="form-control" placeholder="Name">
+                    <div class="SignupForm" id="registerForm">
+
+                      <?php $form = ActiveForm::begin([
+                            'action' => '?r=company',
+                            'options' => [
+                                'class' => 'userform'
+                             ]
+                        ]); ?>
+                          <?= $form->field($model, 'FirstName')
+                          ->input('text', ['placeholder' => "First Name"])->label(false); ?>
+
+                          <?= $form->field($model, 'LastName')
+                          ->input('text', ['placeholder' => "Last Name"])->label(false); ?>
+
+                          <?= $form->field($model, 'Email')
+                          ->input('email', ['placeholder' => "Email"])->label(false); ?>
+
+                          <?= $form->field($model, 'Password')
+                          ->input('password', ['placeholder' => "Password"])->label(false); ?>
+
+                          <?= $form->field($model, 'Password_repeat')
+                          ->input('password', ['placeholder' => "Password repeat"])->label(false); ?>
+
+                          <?= $form->field($model, 'Role')->dropDownList([
+                              4 => 'Tealents',
+                              5 => 'Company'
+                          ],['prompt'=>'Select role'])->label(false); ?>
+                      
+                          <div class="form-group">
+                              <?= Html::submitButton(Yii::t('app', 'Get started'), ['class' => 'btn']) ?>
+                          </div>
+                      <?php ActiveForm::end(); ?>
+
                     </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    
-                  </form>
-                  <div class="form-group registerForm">
-                    <input type="submit" form="registerForm" class="btn btn-primary btn-pill" value="get started">
-                  </div>
 
                 </div>
               </div>
@@ -287,7 +306,7 @@ $this->title = 'TALENTS';
           </div>
         </div>
 
-        <div class="site-section" id="why-us-section">
+        <div class="site-section why-us-section" id="about-section">
           <div class="container">
             <div class="row mb-5 justify-content-center">
               <div class="col-lg-12 mb-5 text-center"  data-aos="fade-up" data-aos-delay="">
@@ -487,24 +506,6 @@ $this->title = 'TALENTS';
       </div>
     </div>
     
-     
-    <footer class="bg-black">
-      <div class="container">
-        
-        <div class="row pt-3 text-center">
-          <div class="col-md-12">
-            <div>
-            <p>
-               &copy;<script>document.write(new Date().getFullYear());</script> 
-            </p>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </footer>
-
-  
     
   </div> <!-- .site-wrap -->
 

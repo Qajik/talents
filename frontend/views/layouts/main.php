@@ -42,15 +42,14 @@ AppAsset::register($this);
     ]);
     if($isHome){
         $menuItems = [
-            ['label' => 'About Us', 'url' => '#home-section', 'class' => 'nav-link'],
-            ['label' => 'Talents', 'url' => '#services-section', 'class' => 'nav-link'],
+            ['label' => 'About Us', 'url' => '#about-section', 'class' => 'nav-link'],
+            ['label' => 'Talents', 'url' => '#talents-section', 'class' => 'nav-link'],
             ['label' => 'Company', 'url' => '#companies-section', 'class' => 'nav-link'],
             ['label' => 'Statistics', 'url' => '#statistics-section', 'class' => 'nav-link'],
             ['label' => 'Contact', 'url' => '#contact-section', 'class' => 'nav-link'],
         ];
     }
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
         $menuItems[] = '<li>'
@@ -71,45 +70,53 @@ if($isHome){
 $contentContainerClass = "container-fluid"; 
 ?>
 <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-      
-      <div class="container-fluid">
-        <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center">
+      <div class="site-logo mr-auto w-25">
+        <a href="#home-section">
             <img src="/frontend/web/img/main-top-logo.png" alt="talents logo">
-          </div>
-
-          <div class="mx-auto text-center">
-            <nav class="site-navigation position-relative text-right site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0" role="navigation">
-              
-              <?
-                echo Nav::widget([
-                    'options' => ['class' => 'navbar-nav navbar-right .site-menu'],
-                    'items' => $menuItems,
-                ]);
-                NavBar::end();
-              ?>
-            </nav>
-          </div>
-        </div>
+        </a>
       </div>
-    </header>
+      <div class="mx-auto text-center">
+        <nav class="site-navigation position-relative text-right site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0" role="navigation">
+          
+          <?
+            echo Nav::widget([
+                'options' => ['class' => 'navbar-nav navbar-right .site-menu'],
+                'items' => $menuItems,
+            ]);
+            NavBar::end();
+          ?>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
 <?php } ?>
 <!-- ending home top navigation -->
-    <div class=<?= $contentContainerClass; ?>>
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
-    </div>
+<div class=<?= $contentContainerClass; ?>>
+    <?= Breadcrumbs::widget([
+        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+    ]) ?>
+    <?= Alert::widget() ?>
+    <?= $content ?>
+</div>
 </div>
 
-<footer class="footer">
-    <div class="container">
-<!--        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>-->
+<footer class="bg-black">
+  <div class="container">
+    
+    <div class="row pt-3 text-center">
+      <div class="col-md-12">
+        <div>
+        <p>
+           &copy;<?= date('Y') ?>
+        </p>
+        </div>
+      </div>
+      
     </div>
+  </div>
 </footer>
 
 <?php $this->endBody() ?>
