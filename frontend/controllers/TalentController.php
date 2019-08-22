@@ -65,17 +65,6 @@ class TalentController extends BaseController {
         ];
     }
     
-    public function beforeAction($action) {
-
-        \Yii::$app->assetManager->bundles = [
-            'app\assets\AppAsset' => [
-                'css' => ['@web/css/talents.css'],
-            ],
-        ];
-
-        return parent::beforeAction($action);
-    }
-    
     public function actionIndex()
     {    
         return $this->render('index');
