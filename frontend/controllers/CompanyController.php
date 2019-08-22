@@ -40,7 +40,7 @@ class CompanyController extends BaseController {
                         'actions' => ['logout','index'],
                         'allow' => true,
                         'matchCallback' => function($rule, $action){
-                            return Yii::$app->user->getIdentity()->Role===CommandDefinitionsComponent::companyRole;
+                            return Yii::$app->user->getIdentity()->Role===CommandDefinitionsComponent::talentRole;
                         },
                     ],
                 ],
@@ -52,6 +52,10 @@ class CompanyController extends BaseController {
                 ],
             ],
         ];
+    }
+
+    public function getUserID(){
+        return Yii::$app->user->identity->IdUsers;
     }
     
     public function actions()
@@ -67,8 +71,9 @@ class CompanyController extends BaseController {
         ];
     }
 
-    public function getUserCompany($userID){
+    public function getUserCompany(){
         $company = new Company();
+        $userID = $this->getUserID();
         return $company->find()->where(['=', 'idUsers', $userID])->all();
     }
     
@@ -78,8 +83,7 @@ class CompanyController extends BaseController {
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
             Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
         }
-        $userID = Yii::$app->user->identity->IdUsers;
-        $company = $this->getUserCompany($userID);
+        $company = $this->getUserCompany();
         return $this->render('index', compact('model', 'company'));
     }
     
