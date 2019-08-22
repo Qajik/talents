@@ -18,9 +18,9 @@ class TalentProfileAsset extends AssetBundle{
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
-        'css/talents-profile.css',
-        'css/colors.css',
+        'css/common.css',
+        'css/talents/talents-profile.css',
+        'css/talents/talents-cv.css',
     ];
     public $js = [
         'js/common_talent.js'

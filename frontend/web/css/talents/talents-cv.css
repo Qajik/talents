@@ -1,0 +1,31 @@
+#cv-details{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	padding: 40px 80px 35px 80px;
+}
+#cv-details > div{
+	cursor: pointer;
+}
+#cv-details .cv-item{
+	background-color: #EAEAEA;
+	border-top: 1px solid #D7D8D9;
+	border-right: 1px solid #D7D8D9;
+	border-left: 1px solid #D7D8D9;
+    padding: 5px 8px;
+    text-align: center;
+}
+
+#cv-details h4{
+	margin-bottom: 40px;
+}
+#cv-details p{
+	padding: 5px 0;
+	background-color: #BBBDBF;
+	color: #4189A0;
+	text-align: center;
+}
+#cv-details .active p{
+	background-color: #4189A0;
+	color: #fff;
+}

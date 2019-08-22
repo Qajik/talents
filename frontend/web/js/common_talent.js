@@ -73,6 +73,7 @@ var talents = {
         this.checkboxIsCheckedHiddenAreaFunction();
         this.commonActions();
         this.tabOnClickLoad();
+        this.selectResumeOnClick();
     },
     initAferFormLoad : function(){
         this.checkboxIsCheckedHiddenAreaFunctionScan();
@@ -88,6 +89,12 @@ var talents = {
         });
     },
     
+    selectResumeOnClick: function(){
+        $(document).on('click','#cv-details > div', function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    },
+
     loadOptions: function (contentSelector) {
 
         var options = this.optionsUrls();
