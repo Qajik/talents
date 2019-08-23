@@ -31,8 +31,14 @@ TalentProfileAsset::register($this);
                         <div class="row">
                             <div class="col-md-12">
                                 <nav class="nav flex-column leftBarProfileNavi">
-                                    <a class="nav-link active" href="#"><i class="fas fa-home"></i>    Home</a>
-                                    <a class="nav-link" href="#"><i class="fas fa-address-book"></i>    Contacts</a>
+                                    <a class="nav-link active" href="#">
+                                        <img src="img/Home_icon.png" alt="home icon">
+                                        <span>Home</span>
+                                    </a>
+                                    <a class="nav-link" href="#">
+                                        <img src="img/Contacts_icon.png" alt="contact icon"> 
+                                        <span>Contacts</span>
+                                    </a>
                                 </nav>
                             </div>
                         </div>
@@ -59,7 +65,8 @@ TalentProfileAsset::register($this);
                                             </div>
                                         </div>
                                         <div class="col-md-1">
-                                            <button class="btn btn-info settingsToolButtonProfileRight"><i class="fas fa-ellipsis-h"></i></button>
+                                            <button class="btn btn-info settingsToolButtonProfileRight">
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -153,29 +160,44 @@ TalentProfileAsset::register($this);
                                         <div class="row">
                                             <div id="cv-details" class="col-md-12">
                                                 <h4 class="col-md-12">Select a Resume style of your preference</h4>
+                                                <div class="col-md-3 active" data-toggle="modal" data-target="#resumeModal">
+                                                    <div class="cv-item" data-resume-id="1">
+                                                        <img src="img/talents-cvs/resume-1.png" alt="Resume 1" />
+                                                    </div>
+                                                    <p>Resume 1</p>
+                                                </div>
+                                                <div class="col-md-3" data-toggle="modal" data-target="#resumeModal">
+                                                    <div class="cv-item" data-resume-id="2">
+                                                        <img src="img/talents-cvs/resume-1-1.png" alt="Resume 2" />
+                                                    </div>
+                                                    <p>Resume 2</p>
+                                                </div>
+                                                <div class="col-md-3" data-toggle="modal" data-target="#resumeModal">
+                                                    <div class="cv-item" data-resume-id="3">
+                                                        <img src="img/talents-cvs/resume-3.png" alt="Resume 3" />
+                                                    </div>
+                                                    <p>Resume 3</p>
+                                                </div>
+                                                <div class="col-md-3" data-toggle="modal" data-target="#resumeModal">
+                                                    <div class="cv-item" data-resume-id="4">
+                                                        <img src="img/talents-cvs/resume-4.png" alt="Resume 4" />
+                                                    </div>
+                                                    <p>Resume 4</p>
+                                                </div>
+
+
+                                                <!-- Recently created cvs -->
+
+                                                <div class="col-md-12 clearfix dashed-hr"></div>
+                                                <h4 class="col-md-12">Recently created cv</h4>
                                                 <div class="col-md-3 active">
                                                     <div class="cv-item" data-resume-id="1">
                                                         <img src="img/talents-cvs/resume-1.png" alt="Resume 1" />
                                                     </div>
                                                     <p>Resume 1</p>
                                                 </div>
-                                                <div class="col-md-3">
-                                                    <div class="cv-item" data-resume-id="2">
-                                                        <img src="img/talents-cvs/resume-2.png" alt="Resume 2" />
-                                                    </div>
-                                                    <p>Resume 2</p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="cv-item" data-resume-id="3">
-                                                        <img src="img/talents-cvs/resume-3.png" alt="Resume 3" />
-                                                    </div>
-                                                    <p>Resume 3</p>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="cv-item" data-resume-id="4">
-                                                        <img src="img/talents-cvs/resume-4.png" alt="Resume 4" />
-                                                    </div>
-                                                    <p>Resume 4</p>
+                                                <div class="col-md-12 text-right creat-cv-btn">
+                                                    <button class="btn">Crate CV</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -190,3 +212,14 @@ TalentProfileAsset::register($this);
             </div>
         </section>
 <!---Section End--->
+<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>

@@ -91,7 +91,10 @@ var talents = {
     
     selectResumeOnClick: function(){
         $(document).on('click','#cv-details > div', function(){
-            $(this).addClass('active').siblings().removeClass('active');
+            var _self = $(this);
+            var cvImg = _self.find('img').clone();
+            _self.addClass('active').siblings().removeClass('active');
+            $('#resumeModal').find('.modal-body').html(cvImg);
         });
     },
 
