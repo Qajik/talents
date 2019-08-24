@@ -1,0 +1,104 @@
+#projects-block{
+	position: relative;
+	padding: 40px 60px;
+}
+
+#projects-block .add-project{
+	padding: 5px 30px;
+	background-color: #41BBD9;
+	color: #fff;
+}
+
+#projects-block .add-project:active{
+	background-color: #006E90;
+}
+
+#projects-block .projects-empty{
+	margin: 100px 0;
+	font-size: 22px;
+	padding: 0 15px;
+}
+
+.projects-block-add{
+	display: none;
+}
+
+.add-project-form form input:not([type="file"]), .add-project-form form textarea, .add-project-form form select{
+	border: 1px solid #888888;
+	max-width: 100%;
+	background-color: #EAEAEA;
+	margin-bottom: 25px;
+	border-radius: 2px;
+}
+.add-project-form form input[type="file"] {
+	padding: 0 !important;
+    color: transparent;
+}
+.add-project-form form input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.add-project-form form input[type="file"]::before {
+    content: 'Upload files';
+    text-align: center;
+    width: 100%;
+    display: block;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px 30px;
+    background-color: #006E90;
+}
+.add-project-form form input[type="file"]t:hover::before {
+  border-color: black;
+}
+.add-project-form form input[type="file"]:active {
+  outline: 0;
+}
+.add-project-form form input[type="file"]:active::before {
+  background: #006E90;
+}
+.add-project-form form input[type="submit"] {
+	color: #fff;
+	background-color: #006E90;
+}
+.project-video-url{
+	margin-top: 15px;
+}
+.project-video-url .pr-0{
+	padding-right: 0;
+}
+.project-video-url button{
+	padding-left: 0;
+	cursor: pointer;
+    color: #fff;
+    padding: 7px 30px;
+    background-color: #006E90;
+    color: #fff;
+}
+
+#project-update-section{
+	position: absolute;
+    width: calc(100% - 30px);
+    bottom: 0;
+    left: 15px;
+    text-align: right;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    padding: 7px 15px 7px 0;
+    background-color: #ADCAD6;
+}
+#project-update-section input{
+	margin-bottom: 0;
+	border: none;
+	padding: 5px 20px;
+}
+
+#project-update-section input:not([type="submit"]){
+	margin-right: 10px;
+	color: #006E90;
+	background-color: transparent;
+}

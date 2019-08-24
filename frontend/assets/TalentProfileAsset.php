@@ -20,6 +20,7 @@ class TalentProfileAsset extends AssetBundle{
     public $css = [
         'css/common.css',
         'css/talents/talents-profile.css',
+        'css/talents/talents-projects.css',
         'css/talents/talents-cv.css',
     ];
     public $js = [
