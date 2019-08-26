@@ -312,12 +312,12 @@ $this->title = 'TALENTS';
               <div class="col-lg-12 mb-5 text-center"  data-aos="fade-up" data-aos-delay="">
                 <h2 class="section-title mb-3">Why work with us</h2>
                 <div class="whyus-short-hr  mb-3"><div></div></div>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
               </div>
             </div>
             <div class="row why-us-section-ideas">
               <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="why-us-section-item text-center">
+                <div class="why-us-section-item text-center mt-5">
                   <img src="img/home/person_1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
                   <div class="py-2">
                     <h3 class="text-black">Idea 1</h3>
@@ -327,7 +327,7 @@ $this->title = 'TALENTS';
               </div>
 
               <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="why-us-section-item text-center">
+                <div class="why-us-section-item text-center mt-5">
                   <img src="img/home/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
                   <div class="py-2">
                     <h3 class="text-black">Idea 2</h3>
@@ -337,7 +337,7 @@ $this->title = 'TALENTS';
               </div>
 
               <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="why-us-section-item text-center">
+                <div class="why-us-section-item text-center mt-5">
                   <img src="img/home/person_3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
                   <div class="py-2">
                     <h3 class="text-black">Idea 3</h3>
@@ -349,7 +349,7 @@ $this->title = 'TALENTS';
           </div>
         </div>
 
-        <div class="row mb-5 pt-5 pb-4 align-items-center" id="statistics-section">
+        <div class="row mb-5 site-section pb-5 align-items-center" id="statistics-section">
           <div class="col-lg-12 m-auto mb-5 justify-content-center">
               <div class="mb-5 text-center"  data-aos="fade-up" data-aos-delay="">
                 <h2 class="section-title mb-3">Statistics</h2>
@@ -357,7 +357,7 @@ $this->title = 'TALENTS';
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing adipisicing elit. </p>
               </div>
             </div>
-          <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 ml-auto pb-5" data-aos="fade-up" data-aos-delay="200">
             <h2 class="text-black mb-4">Latest Information</h2>
             <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo possimus fugiat quo molestiae illo.</p>
             <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime nam porro possimus fugiat quo molestiae illo possimus fugiat quo molestiae illo possimus fugiat quo molestiae illo.</p>
@@ -369,7 +369,7 @@ $this->title = 'TALENTS';
             </div>
           </div>
 
-          <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-7 mb-5 mt-5 pb-5" data-aos="fade-up" data-aos-delay="100">
             <img src="img/home/undraw_teacher.svg" alt="Image" class="img-fluid">
           </div>
         </div>
@@ -389,6 +389,7 @@ $this->title = 'TALENTS';
                   <div class="py-2">
                     <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
                   </div>
+                  <div class="triangle-down"></div>
                 </div>
 
                 <div class="mt-5 customers-review-writers">
@@ -406,6 +407,7 @@ $this->title = 'TALENTS';
                   <div class="py-2">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisciLorem ipsum dolor sit amet, at provident.</p>
                   </div>
+                  <div class="triangle-down"></div>
                 </div>
                 <div class="mt-5 customers-review-writers">
                   <img src="img/home/person_3.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
@@ -421,6 +423,7 @@ $this->title = 'TALENTS';
                   <div class="py-2">
                     <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
                   </div>
+                  <div class="triangle-down"></div>
                 </div>
                 <div class="mt-5 customers-review-writers">
                   <img src="img/home/person_4.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
@@ -487,7 +490,7 @@ $this->title = 'TALENTS';
               <div class="col-lg-6">
                 <div class="form-group row">
                   <div class="col-md-12">
-                    <textarea class="form-control" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <textarea class="mt-2 form-control" id="" cols="30" rows="10" placeholder="Message"></textarea>
                   </div>
                 </div>
               </div>

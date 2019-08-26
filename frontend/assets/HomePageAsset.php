@@ -18,6 +18,7 @@ class HomePageAsset extends AssetBundle{
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+        "css/font-awesome-5.9.0.css",
         "css/home/bootstrap.min.css",
         "css/home/jquery-ui.css",
         "css/home/owl.carousel.min.css",

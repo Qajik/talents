@@ -34,10 +34,8 @@ AppAsset::register($this);
     $isHome = (($controller->id === $default_controller) && ($controller->action->id === $controller->defaultAction)) ? true : false;
 
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-nav',
         ],
     ]);
     if($isHome){
@@ -71,18 +69,18 @@ $contentContainerClass = "container-fluid";
 ?>
 <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
   <div class="container-fluid">
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center w-100">
       <div class="site-logo mr-auto w-25">
         <a href="#home-section">
             <img src="/frontend/web/img/main-top-logo.png" alt="talents logo">
         </a>
       </div>
-      <div class="mx-auto text-center">
+      <div class="mx-auto text-center w-75">
         <nav class="site-navigation position-relative text-right site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0" role="navigation">
           
           <?
             echo Nav::widget([
-                'options' => ['class' => 'navbar-nav navbar-right .site-menu'],
+                'options' => ['class' => 'navbar-nav navbar-right site-menu'],
                 'items' => $menuItems,
             ]);
             NavBar::end();
@@ -109,9 +107,12 @@ $contentContainerClass = "container-fluid";
     <div class="row pt-3 text-center">
       <div class="col-md-12">
         <div>
-        <p>
-           &copy;<?= date('Y') ?>
-        </p>
+             <div class="text-center social-box">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p> &copy;<?= date('Y') ?> </p>
         </div>
       </div>
       

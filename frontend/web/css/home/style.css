@@ -153,20 +153,24 @@ h1, h2, h3, h4, h5,
 
 .site-section {
   padding: 2.5em 0; }
-  @media (min-width: 768px) {
-    .site-section {
-      padding: 5em 0; } }
-  .site-section.site-section-sm {
-    padding: 4em 0; }
+ 
 
 .site-section-heading {
   padding-bottom: 20px;
   margin-bottom: 0px;
   position: relative;
   font-size: 2.5rem; }
+   @media (min-width: 768px) {
+    .site-section {
+      padding: 5em 0; } }
+  .site-section.site-section-sm {
+    padding: 4em 0; }
   @media (min-width: 768px) {
     .site-section-heading {
       font-size: 3rem; } }
+      @media (min-width: 768px) {
+    .site-footer {
+      padding: 8em 0; } }
 
 .border-top {
   border-top: 1px solid #edf0f5 !important; }
@@ -174,9 +178,7 @@ h1, h2, h3, h4, h5,
 .site-footer {
   padding: 4em 0;
   background: #333333; }
-  @media (min-width: 768px) {
-    .site-footer {
-      padding: 8em 0; } }
+  
   .site-footer .border-top {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
   .site-footer p {
@@ -763,10 +765,15 @@ h1, h2, h3, h4, h5,
   margin-bottom: 0;
 }
 #registerForm .form-group input, #registerForm .form-group button, #registerForm .form-group select{
-  border: none !important;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #D6D6D6;
   border-radius: 0 !important;
+  box-shadow: none !important;
   font-size: 1.2rem;
-}
+  font-weight: normal;
+} 
 #registerForm .form-group button{
   position: absolute;
   height: 50px;
@@ -776,6 +783,7 @@ h1, h2, h3, h4, h5,
   text-transform: none;
   color: #fff;
   background-color: #3A4FA0;
+  border-bottom: 1px solid #3A4FA0;
 }
 #registerForm .form-group .help-block:empty{
   display: none;
@@ -1123,7 +1131,7 @@ h1, h2, h3, h4, h5,
   height: 10px;
   width: 10px;
   margin: 0 10px;
-  background-color: #333333;
+  background-color: #A1A3AA;
   border-radius: 100%; 
 }
 #talents-section .owl-carousel .owl-dots .owl-dot.active span{
@@ -1226,14 +1234,18 @@ h1, h2, h3, h4, h5,
     left: -10rem;
     position: absolute; }
 
-.why-us-section-item{
+  .why-us-section-item{
   border: 1px solid #e9ecef;
   padding: 30px;
   margin-bottom: 5rem; }
   .customers-review-item{
-    background: #F5F5F5;
+    position: relative;
+    background-color: #F5F5F5;
     border: none;
+    border-radius: 2px;
+    height: 110px;
   }
+  
   .customers-review-writers > * {
     display: inline-block;
   }
@@ -1345,11 +1357,21 @@ h1, h2, h3, h4, h5,
     color: #fff;
     font-weight: normal;
   }
+  #contact-section form input:not([type="submit"]), #contact-section form textarea{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    box-shadow: none;
+    border-bottom: 1px solid #ced4da;
+  }
   #services-section.services-title{
     padding-bottom: 2rem;
   }
   
 @media (min-width: 768px){
+  #w1-collapse.collapse:not(.show){
+    display: block !important;
+  }
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
       display: none;
   }
@@ -1368,6 +1390,9 @@ h1, h2, h3, h4, h5,
     margin-left: 0;
     background: red!important
   }
+  #talents-section .owl-carousel .owl-stage-outer{
+    margin-right: 15px;
+  }
   #services-section .img-fluid{
     width: 100% !important;
   }
@@ -1380,4 +1405,36 @@ h1, h2, h3, h4, h5,
     top: 0;
   }
 
+  .customers-review-item .triangle-down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #F5F5F5;
+    bottom: -15px;
+    left: 9.5%;
+  }
+
+}
+
+@media (max-width: 768px){
+  .wrap > .navbar-nav{
+    display: block;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .navbar-header{
+    display: none!important;
+  }
+  #sticky-wrapper{
+    left: 0;
+  }
+  #w1-collapse.collapse:not(.show){
+    display: block !important;
+  }
+  .site-logo *{
+    width: 100%;
+    height: auto !important;
+  }
 }

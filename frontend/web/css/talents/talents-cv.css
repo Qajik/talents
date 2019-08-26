@@ -9,7 +9,7 @@
 	box-sizing: border-box;
 	padding: 40px 60px 35px 60px;
 }
-#cv-details > div:not(.clearfix){
+#cv-details > div:not(.clearfix), #cv-details > div:not(.creat-cv-btn){
 	cursor: pointer;
 }
 #cv-details .cv-item{
